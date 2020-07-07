@@ -1,8 +1,51 @@
+$main-yellow: #ffdb00;
+$main-black: #202020;
+$main-gray: #535353;
+
+@font-face{
+    font-family: genjyuu-b;
+    src: url(../font/GenJyuuGothic-Bold.ttf);
+}
+@font-face{
+    font-family: genjyuu-m;
+    src: url(../font/GenJyuuGothicL-Medium.ttf);
+}
+@font-face{
+    font-family: logo-rounded;
+    src: url(../font/Corporate-Logo-Rounded.ttf);
+}
+@font-face{
+    font-family: skia;
+    src: url(../font/Skia.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 0;
     border: 0;
     list-style: none;
 }
+
+header{
+
+    .menu{
+        position: relative;
+        
+        // 未完成：漢堡選單
+        .menu-line{
+            height: 1px;
+            width: 40px;
+            background-color: $main-yellow;
+    
+        }
+    }
+
+    .banner{
+
+        img{
+            width: 100vw;
+        }
+    }
+    
+}    

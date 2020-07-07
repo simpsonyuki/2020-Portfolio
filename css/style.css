@@ -1,10 +1,43 @@
+@font-face {
+  font-family: genjyuu-b;
+  src: url(../font/GenJyuuGothic-Bold.ttf);
+}
+
+@font-face {
+  font-family: genjyuu-m;
+  src: url(../font/GenJyuuGothicL-Medium.ttf);
+}
+
+@font-face {
+  font-family: logo-rounded;
+  src: url(../font/Corporate-Logo-Rounded.ttf);
+}
+
+@font-face {
+  font-family: skia;
+  src: url(../font/Skia.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 0;
   border: 0;
   list-style: none;
+}
+
+header .menu {
+  position: relative;
+}
+
+header .menu .menu-line {
+  height: 1px;
+  width: 40px;
+  background-color: #ffdb00;
+}
+
+header .banner img {
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */

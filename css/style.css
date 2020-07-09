@@ -37,6 +37,11 @@ header .menu .menu-line {
   background-color: #ffdb00;
 }
 
+header .banner .title h1 {
+  font-size: 155px;
+  color: #fff;
+}
+
 header .banner img {
   width: 100vw;
 }

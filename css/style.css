@@ -25,10 +25,21 @@
           box-sizing: border-box;
   border: 0;
   list-style: none;
+  font-family: "genjyuu-m";
+}
+
+header {
+  position: relative;
 }
 
 header .menu {
-  position: relative;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ffdb00;
+  height: 50px;
+  width: 50px;
+  z-index: 999;
 }
 
 header .menu .menu-line {
@@ -37,12 +48,60 @@ header .menu .menu-line {
   background-color: #ffdb00;
 }
 
-header .banner .title h1 {
-  font-size: 155px;
+header .banner {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+}
+
+header .banner .banner-title {
+  position: absolute;
+  right: 50px;
+  top: 450px;
+  text-align: center;
+}
+
+header .banner .banner-title h1 {
+  font-size: 100px;
   color: #fff;
 }
 
-header .banner img {
-  width: 100vw;
+header .banner .banner-title .eng-name {
+  font-size: 50px;
+  color: #fff;
+}
+
+header .banner .banner-title .eng-name .line {
+  display: inline-block;
+  top: 20px;
+  height: 1px;
+  width: 160px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+header .banner .banner-title .job-title {
+  font-size: 40px;
+  color: #202020;
+  font-family: "logo-rounded";
+  letter-spacing: 0.5px;
+  text-shadow: #fff 1px 1px 3px;
+}
+
+main .container .row .section-title .h3 {
+  font-size: 60px;
+  color: #ffdb00;
+  display: block;
+}
+
+main .container .row .section-title .h3 .line-y {
+  display: inline-block;
+  top: 20px;
+  height: 1px;
+  width: 160px;
+  vertical-align: middle;
+  background-color: #ffdb00;
 }
 /*# sourceMappingURL=style.css.map */

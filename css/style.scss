@@ -19,18 +19,42 @@ $main-gray: #535353;
     src: url(../font/Skia.ttf);
 }
 
+@mixin sectionH3 {
+    font-size: 60px;
+    color: $main-yellow;
+    display: block;
+
+    .line-y{
+        display: inline-block;
+        top: 20px;
+        height: 1px;
+        width: 160px;
+        vertical-align: middle;
+        background-color: $main-yellow;
+    }
+    
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 0;
     list-style: none;
+    font-family: "genjyuu-m";
 }
 
 header{
+    position: relative;
 
     .menu{
-        position: relative;
+        position: absolute;
+        top:20px;
+        left: 20px;
+        background-color: $main-yellow;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
         
         // 未完成：漢堡選單
         .menu-line{
@@ -42,18 +66,58 @@ header{
     }
 
     .banner{
+        background-image: url(../img/banner.png);
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+        position: relative;
 
-        .title{
+        .banner-title{
+            position: absolute;
+            right: 50px ;
+            top: 450px;
+            text-align: center;
             h1{
-                font-family: ;
-                font-size: 155px;
+                font-size: 100px;
                 color: #fff;
+            }
+            .eng-name {
+                font-size: 50px;
+                color: #fff;
+                .line{
+                    display: inline-block;
+                    top: 20px;
+                    height: 1px;
+                    width: 160px;
+                    vertical-align: middle;
+                    background-color: #fff;
+                }
+            }
+            .job-title{
+                font-size: 40px;
+                color: $main-black;
+                font-family: "logo-rounded";
+                letter-spacing: 0.5px;
+                text-shadow: #fff 1px 1px 3px;
             }
         }
 
-        img{
-            width: 100vw;
-        }
     }
     
 }    
+
+main{
+    .container{
+      
+
+        .row{
+            .section-title{
+                // transform: rotate(90deg);
+                .h3{
+                    @include sectionH3();
+                }
+            }
+        }
+
+    }
+}

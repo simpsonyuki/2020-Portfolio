@@ -122,10 +122,11 @@ main .container .section-title .h3 .line-y {
 }
 
 main .container .year {
-  font-family: "logo-rounded";
-  color: #ffdb00;
-  font-size: 28px;
-  margin-bottom: -10px;
+  margin-left: 20px;
+}
+
+main .container .year img {
+  width: 100px;
 }
 
 main .container .bg-yellow {
@@ -143,7 +144,6 @@ main .container .bg-yellow .status {
 }
 
 main .container .row #exp {
-  display: block;
   position: relative;
   margin: 0 auto;
 }
@@ -152,6 +152,15 @@ main .container .row #exp .section-title {
   position: absolute;
   top: 150px;
   right: -100px;
+}
+
+main .container .row #exp .exp-list {
+  position: relative;
+}
+
+main .container .row #exp .exp-list .exp-item p {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 main .container .row #skill {

@@ -36,10 +36,10 @@ $main-gray: #535353;
 }
 
 @mixin year {
-    font-family: "logo-rounded";
-    color: $main-yellow;
-    font-size: 28px;
-    margin-bottom: -10px;
+    img{
+        width: 100px;
+    }
+    margin-left: 20px;
 }
 
 @mixin bg-yellow{
@@ -72,11 +72,9 @@ header{
         position: absolute;
         top:20px;
         left: 20px;
-        // background-color: $main-yellow;
         height: 50px;
         width: 50px;
         z-index: 999;
-        // padding: 5px;
         
         // 未完成：漢堡選單
         .menu-line{
@@ -157,9 +155,8 @@ main{
         }
 
         .row{
-
+            // 學經歷 #exp
             #exp{
-                display: block;
                 position: relative;
                 margin: 0 auto;
                 .section-title{
@@ -167,11 +164,23 @@ main{
                     top: 150px;
                     right: -100px;
                 }
+                .exp-list{
+                    position: relative;
+                    
+                    .exp-item{
+                        
+                        p{
+                            display: inline-block;
+                            margin-left: 10px;
+                        }
+                    }
+                    
+                }
 
             }
         }
 
-
+        // 工作技能 #skill
         .row{
 
             #skill{

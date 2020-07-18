@@ -97,24 +97,28 @@ header .banner .banner-title .job-title {
   text-shadow: #fff 1px 1px 3px;
 }
 
-main .container .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
-main .container .section-title {
+main .section-title-r {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  position: absolute;
+  top: 150px;
+  right: -100px;
 }
 
-main .container .section-title .h3 {
+main .section-title-r .h3 {
   font-size: 3.5rem;
   color: #ffdb00;
   display: block;
 }
 
-main .container .section-title .h3 .line-y {
+main .section-title-r .h3 .line-y {
   display: inline-block;
   top: 20px;
   height: 1px;
@@ -123,87 +127,103 @@ main .container .section-title .h3 .line-y {
   background-color: #ffdb00;
 }
 
-main .container .year {
+main .section-title-l {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 150px;
+  left: -100px;
+}
+
+main .section-title-l .h3 {
+  font-size: 3.5rem;
+  color: #ffdb00;
+  display: block;
+}
+
+main .section-title-l .h3 .line-y {
+  display: inline-block;
+  top: 20px;
+  height: 1px;
+  width: 160px;
+  vertical-align: middle;
+  background-color: #ffdb00;
+}
+
+main .year {
   margin-left: 20px;
 }
 
-main .container .year img {
+main .year img {
   width: 100px;
 }
 
-main .container .bg-yellow {
+main .bg-yellow {
   background-color: #ffdb00;
   display: inline-block;
   padding: 10px 30px;
 }
 
-main .container .bg-yellow .place {
+main .bg-yellow .place {
   margin-right: 10px;
 }
 
-main .container .bg-yellow .status {
+main .bg-yellow .status {
   color: #fff;
 }
 
-main .container .row #exp {
+main .row.exp {
   position: relative;
 }
 
-main .container .row #exp .section-title {
+main .row.exp .section-title-r {
   position: absolute;
   top: 150px;
   right: -100px;
 }
 
-main .container .row #exp .exp-list {
+main .row.exp .exp-list {
   position: relative;
 }
 
-main .container .row #exp .exp-list .exp-item p {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-main .container .row.skill {
-  -webkit-box-orient: vertical;
+main .row.skill {
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-main .container .row.skill #skill {
+main .row.skill .skill-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .row.works {
   display: block;
   position: relative;
-  height: 100%;
 }
 
-main .container .row.skill #skill .section-title {
-  position: absolute;
-  top: 150px;
-  right: -100px;
-}
-
-main .container .row #works {
-  display: block;
-  position: relative;
-  height: 100%;
-}
-
-main .container .row #works .section-title {
-  position: absolute;
-  top: 150px;
-  right: -100px;
-}
-
-main .container .row.contact #contact {
-  display: block;
-  position: relative;
+main #contact {
   background-color: #ffdb00;
 }
 
-main .container .row.contact #contact .section-title {
-  position: absolute;
-  top: 150px;
-  left: -150px;
+main #contact .row.contact {
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main #contact .row.contact .section-title-l .h3 {
+  color: #fff;
+}
+
+main #contact .row.contact .section-title-l .h3 .line-y {
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

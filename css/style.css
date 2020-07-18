@@ -109,6 +109,7 @@ main .container .section-title {
 main .container .section-title .h3 {
   font-size: 60px;
   color: #ffdb00;
+  display: block;
 }
 
 main .container .section-title .h3 .line-y {
@@ -142,11 +143,37 @@ main .container .bg-yellow .status {
   color: #fff;
 }
 
+main .container .row #exp {
+  position: relative;
+  margin: 0 auto;
+}
+
+main .container .row #exp .section-title {
+  position: absolute;
+  top: 150px;
+  right: -100px;
+}
+
+main .container .row #exp .exp-list {
+  position: relative;
+}
+
+main .container .row #exp .exp-list .exp-item p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
 main .container .row #skill {
   display: block;
   position: relative;
   margin: 0 auto;
   height: 100%;
+}
+
+main .container .row #skill .section-title {
+  position: absolute;
+  top: 150px;
+  right: -100px;
 }
 
 main .container .row #works {

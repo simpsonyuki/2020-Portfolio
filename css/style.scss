@@ -23,7 +23,7 @@ $main-gray: #535353;
 @mixin sectionH3 {
     font-size: 60px;
     color: $main-yellow;
-    // display: block;
+    display: block;
 
     .line-y{
         display: inline-block;
@@ -158,21 +158,21 @@ main{
         // 學經歷 #exp
         .row{
             #exp{
-                // position: relative;
-                // margin: 0 auto;
+                position: relative;
+                margin: 0 auto;
                 .section-title{
-                    // position: absolute;
-                    // top: 150px;
-                    // right: -100px;
+                    position: absolute;
+                    top: 150px;
+                    right: -100px;
                 }
                 .exp-list{
-                    // position: relative;
+                    position: relative;
                     
                     .exp-item{
                         
                         p{
-                            // display: inline-block;
-                            // margin-left: 10px;
+                            display: inline-block;
+                            margin-left: 10px;
                         }
                     }
                     
@@ -190,8 +190,9 @@ main{
                 margin: 0 auto;
                 height: 100%;
                 .section-title{
-                    
-                    
+                    position: absolute;
+                    top: 150px;
+                    right: -100px;
                 }
 
             }

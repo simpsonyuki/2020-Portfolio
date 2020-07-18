@@ -137,7 +137,7 @@ main .section-title-l {
           transform: rotate(90deg);
   position: absolute;
   top: 150px;
-  left: -100px;
+  left: -150px;
 }
 
 main .section-title-l .h3 {
@@ -179,12 +179,6 @@ main .bg-yellow .status {
 
 main .row.exp {
   position: relative;
-}
-
-main .row.exp .section-title-r {
-  position: absolute;
-  top: 150px;
-  right: -100px;
 }
 
 main .row.exp .exp-list {
@@ -244,12 +238,69 @@ main .row.skill .skill-item .skill-list .skill-txt span img {
 }
 
 main .row.works {
-  display: block;
   position: relative;
+}
+
+main .row.works .works-list .filter {
+  font-size: 1.2rem;
+}
+
+main .row.works .works-list .filter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  grid-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .row.works .works-list .my-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .row.works .works-list .my-works .work .work-item {
+  position: relative;
+}
+
+main .row.works .works-list .my-works .work .work-item .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .row.works .works-list .my-works .work .work-item img {
+  width: 100%;
 }
 
 main #contact {
   background-color: #ffdb00;
+  position: relative;
+  height: 600px;
 }
 
 main #contact .row.contact {
@@ -266,5 +317,30 @@ main #contact .row.contact .section-title-l .h3 {
 
 main #contact .row.contact .section-title-l .h3 .line-y {
   background-color: #fff;
+}
+
+main #contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #contact .contact-info .info {
+  color: #fff;
+}
+
+main #contact .contact-info .info a {
+  color: #fff;
+}
+
+main #contact .contact-info .contact-img {
+  position: absolute;
+  right: 0px;
 }
 /*# sourceMappingURL=style.css.map */

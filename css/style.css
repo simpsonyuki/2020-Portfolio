@@ -97,6 +97,11 @@ header .banner .banner-title .job-title {
   text-shadow: #fff 1px 1px 3px;
 }
 
+main section {
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
 main .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -193,6 +198,10 @@ main .row.skill {
           flex-direction: row-reverse;
 }
 
+main .row.skill .h3 .line-y {
+  width: 100px;
+}
+
 main .row.skill .skill-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,6 +209,38 @@ main .row.skill .skill-item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main .row.skill .skill-item .skill-list .title {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+main .row.skill .skill-item .skill-list .title::after {
+  content: '';
+  background-image: url(../img/bottom-line-y.png);
+  display: block;
+  width: 280px;
+  height: 10px;
+  margin-top: -0.7rem;
+}
+
+main .row.skill .skill-item .skill-list .skill-icon {
+  margin-left: -10px;
+}
+
+main .row.skill .skill-item .skill-list .skill-icon img {
+  width: 70px;
+  margin: 10px;
+}
+
+main .row.skill .skill-item .skill-list .skill-txt {
+  margin-top: 30px;
+}
+
+main .row.skill .skill-item .skill-list .skill-txt span img {
+  width: 30px;
 }
 
 main .row.works {

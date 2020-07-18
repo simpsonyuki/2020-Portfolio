@@ -98,7 +98,9 @@ header .banner .banner-title .job-title {
 }
 
 main .container .row {
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .container .section-title {
@@ -107,7 +109,7 @@ main .container .section-title {
 }
 
 main .container .section-title .h3 {
-  font-size: 60px;
+  font-size: 3.5rem;
   color: #ffdb00;
   display: block;
 }
@@ -145,7 +147,6 @@ main .container .bg-yellow .status {
 
 main .container .row #exp {
   position: relative;
-  margin: 0 auto;
 }
 
 main .container .row #exp .section-title {
@@ -163,14 +164,20 @@ main .container .row #exp .exp-list .exp-item p {
   margin-left: 10px;
 }
 
-main .container .row #skill {
+main .container .row.skill {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+main .container .row.skill #skill {
   display: block;
   position: relative;
-  margin: 0 auto;
   height: 100%;
 }
 
-main .container .row #skill .section-title {
+main .container .row.skill #skill .section-title {
   position: absolute;
   top: 150px;
   right: -100px;
@@ -179,7 +186,6 @@ main .container .row #skill .section-title {
 main .container .row #works {
   display: block;
   position: relative;
-  margin: 0 auto;
   height: 100%;
 }
 
@@ -189,14 +195,13 @@ main .container .row #works .section-title {
   right: -100px;
 }
 
-main .container .row #contact {
+main .container .row.contact #contact {
   display: block;
   position: relative;
-  margin: 0 auto;
   background-color: #ffdb00;
 }
 
-main .container .row #contact .section-title {
+main .container .row.contact #contact .section-title {
   position: absolute;
   top: 150px;
   left: -150px;

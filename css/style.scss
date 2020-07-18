@@ -21,7 +21,7 @@ $main-gray: #535353;
 
 // 學經歷區塊樣式
 @mixin sectionH3 {
-    font-size: 60px;
+    font-size: 3.5rem;
     color: $main-yellow;
     display: block;
 
@@ -138,7 +138,7 @@ main{
     .container{
 
         .row{
-            display: block;
+            justify-content: center;
         }
         
         .section-title{
@@ -159,7 +159,7 @@ main{
         .row{
             #exp{
                 position: relative;
-                margin: 0 auto;
+                // margin: 0 auto;
                 .section-title{
                     position: absolute;
                     top: 150px;
@@ -182,12 +182,13 @@ main{
         }
 
         // 工作技能 #skill
-        .row{
+        .row.skill{
+            flex-direction: column-reverse;
 
             #skill{
                 display: block;
                 position: relative;
-                margin: 0 auto;
+                // margin: 0 auto;
                 height: 100%;
                 .section-title{
                     position: absolute;
@@ -206,7 +207,7 @@ main{
             #works{
                 display: block;
                 position: relative;
-                margin: 0 auto;
+                // margin: 0 auto;
                 height: 100%;
                 .section-title{
                     position: absolute;
@@ -219,12 +220,12 @@ main{
         }
 
         // 聯絡我 #contact
-        .row{
+        .row.contact{
 
             #contact{
                 display: block;
                 position: relative;
-                margin: 0 auto;
+                // margin: 0 auto;
                 background-color: $main-yellow;
 
                 .section-title{

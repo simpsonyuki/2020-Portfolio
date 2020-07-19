@@ -198,12 +198,12 @@ main .row.exp .exp-list .exp-item ul {
 
 main .row.exp .exp-list .exp-item:nth-child(2) {
   top: 110px;
-  left: 110px;
+  left: 200px;
 }
 
 main .row.exp .exp-list .exp-item:nth-child(3) {
   top: 250px;
-  left: 250px;
+  left: 380px;
 }
 
 main .row.skill {
@@ -278,10 +278,21 @@ main .row.works .works-list .filter ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 main .row.works .works-list .filter ul li {
   padding: 0 30px;
+}
+
+main .row.works .works-list .filter ul li.active::after {
+  content: '';
+  background-image: url(../img/bottom-line-y.png);
+  width: 150%;
+  height: 10px;
+  display: block;
+  margin-top: -0.5rem;
+  margin-left: -30px;
 }
 
 main .row.works .works-list .my-works {

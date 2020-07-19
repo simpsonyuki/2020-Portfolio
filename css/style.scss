@@ -207,12 +207,12 @@ main {
 
                 &:nth-child(2){
                     top: 110px;
-                    left: 110px;
+                    left: 200px;
                 }
 
                 &:nth-child(3){
                     top: 250px;
-                    left: 250px;
+                    left: 380px;
                 }
             }
 
@@ -290,9 +290,22 @@ main {
                     display: flex;
                     flex-flow: row;
                     justify-content: center;
+                    text-align: center;
 
                     li {
                         padding: 0 30px;
+
+                        &.active{
+                            &::after{
+                                content: '';
+                                background-image: url(../img/bottom-line-y.png);
+                                width: 150%;
+                                height: 10px;
+                                display: block;
+                                margin-top: -0.5rem;
+                                margin-left: -30px;
+                            }
+                        }
                     }
                 }
 

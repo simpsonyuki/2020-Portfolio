@@ -51,12 +51,9 @@ $main-gray: #535353;
     background-color: $main-yellow;
     display: inline-block;
     padding: 10px 30px;
-
-    .place {
-        margin-right: 10px;
-    }
-
+    
     .status {
+        margin-right: 10px;
         color: #fff;
     }
 }
@@ -100,22 +97,29 @@ header {
     }
 
     .banner {
+        position: relative;
 
         .banner-title {
             position: absolute;
-            right: 50px;
-            top: 600px;
+            right: 30px;
+            bottom: 90px;
             text-align: center;
 
         }
 
+        .banner-bg{
+            img{
+                width: 100vw;
+            }
+        }
+
         h1 {
-            font-size: 100px;
+            font-size: 6rem;
             color: #fff;
         }
 
         .eng-name {
-            font-size: 50px;
+            font-size: 3rem;
             color: #fff;
 
             .line {
@@ -187,8 +191,30 @@ main {
 
         .exp-list {
             position: relative;
+            height: 450px;
 
-            .exp-item {}
+            .exp-item {
+                position: absolute;
+
+                p{
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+
+                ul{
+                    margin-left: 30px;
+                }
+
+                &:nth-child(2){
+                    top: 110px;
+                    left: 110px;
+                }
+
+                &:nth-child(3){
+                    top: 250px;
+                    left: 250px;
+                }
+            }
 
         }
 
@@ -263,10 +289,11 @@ main {
                 ul {
                     display: flex;
                     flex-flow: row;
-                    grid-gap: 50px;
                     justify-content: center;
 
-                    li {}
+                    li {
+                        padding: 0 30px;
+                    }
                 }
 
             }
@@ -282,15 +309,39 @@ main {
                     .work-item {
                         position: relative;
 
-                        .hover {
+                        &:hover{
+                            .hover{
+                                display: block;
+                            }
+                        }
 
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            background-color: rgba(255, 255, 255, .5);
-                            display: flex;
-                            flex-flow: column;
-                            justify-content: center;
+                        .hover {
+                            display: none;
+
+                            .details{
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #ffdb0080;
+                                color: #fff;
+                                display: flex;
+                                flex-flow: column;
+                                justify-content: center;
+                                line-height: 2rem;
+
+                                .cata{
+
+                                    &::after{
+                                        content: '';
+                                        height: 1px;
+                                        width: 80%;
+                                        background-color: #fff;
+                                        display: block;
+                                        margin: 0 auto;
+
+                                    }
+                                }
+                            }
                         }
 
                         img {
@@ -310,6 +361,7 @@ main {
         background-color: $main-yellow;
         position: relative;
         height: 700px;
+        width: 100vw;
 
         &::before {
             content: '';
@@ -348,6 +400,7 @@ main {
         .contact-info {
             display: flex;
             flex-flow: row;
+            justify-content: space-between;
 
 
             .info {
@@ -359,7 +412,11 @@ main {
             }
 
 
-            .contact-img {}
+            .contact-img {
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 

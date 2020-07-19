@@ -55,20 +55,28 @@ header .menu .menu-line:nth-child(3) {
   margin-top: 10px;
 }
 
+header .banner {
+  position: relative;
+}
+
 header .banner .banner-title {
   position: absolute;
-  right: 50px;
-  top: 600px;
+  right: 30px;
+  bottom: 90px;
   text-align: center;
 }
 
+header .banner .banner-bg img {
+  width: 100vw;
+}
+
 header .banner h1 {
-  font-size: 100px;
+  font-size: 6rem;
   color: #fff;
 }
 
 header .banner .eng-name {
-  font-size: 50px;
+  font-size: 3rem;
   color: #fff;
 }
 
@@ -161,11 +169,8 @@ main .bg-yellow {
   padding: 10px 30px;
 }
 
-main .bg-yellow .place {
-  margin-right: 10px;
-}
-
 main .bg-yellow .status {
+  margin-right: 10px;
   color: #fff;
 }
 
@@ -175,6 +180,30 @@ main .row.exp {
 
 main .row.exp .exp-list {
   position: relative;
+  height: 450px;
+}
+
+main .row.exp .exp-list .exp-item {
+  position: absolute;
+}
+
+main .row.exp .exp-list .exp-item p {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+main .row.exp .exp-list .exp-item ul {
+  margin-left: 30px;
+}
+
+main .row.exp .exp-list .exp-item:nth-child(2) {
+  top: 110px;
+  left: 110px;
+}
+
+main .row.exp .exp-list .exp-item:nth-child(3) {
+  top: 250px;
+  left: 250px;
 }
 
 main .row.skill {
@@ -246,10 +275,13 @@ main .row.works .works-list .filter ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  grid-gap: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .row.works .works-list .filter ul li {
+  padding: 0 30px;
 }
 
 main .row.works .works-list .my-works {
@@ -273,11 +305,20 @@ main .row.works .works-list .my-works .work .work-item {
   position: relative;
 }
 
+main .row.works .works-list .my-works .work .work-item:hover .hover {
+  display: block;
+}
+
 main .row.works .works-list .my-works .work .work-item .hover {
+  display: none;
+}
+
+main .row.works .works-list .my-works .work .work-item .hover .details {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffdb0080;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,6 +329,16 @@ main .row.works .works-list .my-works .work .work-item .hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  line-height: 2rem;
+}
+
+main .row.works .works-list .my-works .work .work-item .hover .details .cata::after {
+  content: '';
+  height: 1px;
+  width: 80%;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
 }
 
 main .row.works .works-list .my-works .work .work-item img {
@@ -298,6 +349,7 @@ main #contact {
   background-color: #ffdb00;
   position: relative;
   height: 700px;
+  width: 100vw;
 }
 
 main #contact::before {
@@ -341,6 +393,9 @@ main #contact .contact-info {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main #contact .contact-info .info {
@@ -349,6 +404,10 @@ main #contact .contact-info .info {
 
 main #contact .contact-info .info a {
   color: #fff;
+}
+
+main #contact .contact-info .contact-img img {
+  width: 100%;
 }
 
 footer {

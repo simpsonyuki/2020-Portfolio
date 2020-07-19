@@ -109,7 +109,7 @@ header {
 
         .banner-bg{
             img{
-                width: 100vw;
+                width: 100%;
             }
         }
 
@@ -373,7 +373,7 @@ main {
         background-color: $main-yellow;
         position: relative;
         height: 700px;
-        width: 100vw;
+        width: 100%;
 
         &::before {
             content: '';
@@ -381,7 +381,7 @@ main {
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 0 0 100px 100vw;
+            border-width: 0 0 100px 100%;
             border-color: transparent transparent #ffdb00 transparent;
             border-top-color: transparent;
             border-right-color: transparent;

@@ -67,7 +67,7 @@ header .banner .banner-title {
 }
 
 header .banner .banner-bg img {
-  width: 100vw;
+  width: 100%;
 }
 
 header .banner h1 {
@@ -354,7 +354,7 @@ main #contact {
   background-color: #ffdb00;
   position: relative;
   height: 700px;
-  width: 100vw;
+  width: 100%;
 }
 
 main #contact::before {
@@ -363,7 +363,7 @@ main #contact::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 100px 100vw;
+  border-width: 0 0 100px 100%;
   border-color: transparent transparent #ffdb00 transparent;
   border-top-color: transparent;
   border-right-color: transparent;

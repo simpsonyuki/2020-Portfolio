@@ -240,14 +240,12 @@ main {
                     font-size: 1.2rem;
                     letter-spacing: 3px;
                     margin-bottom: 20px;
+                    background: url(../img/bottom-line-y.svg) repeat-x center bottom;
+                    background-size: .75rem;
 
                     &::after {
-                        content: '';
-                        background-image: url(../img/bottom-line-y.png);
-                        display: block;
-                        width: 280px;
-                        height: 10px;
-                        margin-top: -0.7rem;
+                        // content: '';
+                        // margin-top: -0.7rem;
                     }
                 }
 
@@ -298,7 +296,7 @@ main {
                         &.active{
                             &::after{
                                 content: '';
-                                background-image: url(../img/bottom-line-y.png);
+                                background-image: url(../img/bottom-line-y.svg);
                                 width: 150%;
                                 height: 10px;
                                 display: block;
@@ -418,6 +416,12 @@ main {
 
             .info {
                 color: #fff;
+                font-size: 1.2rem;
+                
+                .my-name{
+                    font-size: 1.8rem;
+                    margin-right: 10px;
+                }
 
                 a {
                     color: #fff;

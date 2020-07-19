@@ -230,15 +230,8 @@ main .row.skill .skill-item .skill-list .title {
   font-size: 1.2rem;
   letter-spacing: 3px;
   margin-bottom: 20px;
-}
-
-main .row.skill .skill-item .skill-list .title::after {
-  content: '';
-  background-image: url(../img/bottom-line-y.png);
-  display: block;
-  width: 280px;
-  height: 10px;
-  margin-top: -0.7rem;
+  background: url(../img/bottom-line-y.svg) repeat-x center bottom;
+  background-size: .75rem;
 }
 
 main .row.skill .skill-item .skill-list .skill-icon {
@@ -287,7 +280,7 @@ main .row.works .works-list .filter ul li {
 
 main .row.works .works-list .filter ul li.active::after {
   content: '';
-  background-image: url(../img/bottom-line-y.png);
+  background-image: url(../img/bottom-line-y.svg);
   width: 150%;
   height: 10px;
   display: block;
@@ -411,6 +404,12 @@ main #contact .contact-info {
 
 main #contact .contact-info .info {
   color: #fff;
+  font-size: 1.2rem;
+}
+
+main #contact .contact-info .info .my-name {
+  font-size: 1.8rem;
+  margin-right: 10px;
 }
 
 main #contact .contact-info .info a {

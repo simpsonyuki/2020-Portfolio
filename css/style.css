@@ -55,14 +55,6 @@ header .menu .menu-line:nth-child(3) {
   margin-top: 10px;
 }
 
-header .banner {
-  background-image: url(../img/banner.png);
-  background-size: cover;
-  background-position: center;
-  height: 1000px;
-  position: relative;
-}
-
 header .banner .banner-title {
   position: absolute;
   right: 50px;
@@ -70,17 +62,17 @@ header .banner .banner-title {
   text-align: center;
 }
 
-header .banner .banner-title h1 {
+header .banner h1 {
   font-size: 100px;
   color: #fff;
 }
 
-header .banner .banner-title .eng-name {
+header .banner .eng-name {
   font-size: 50px;
   color: #fff;
 }
 
-header .banner .banner-title .eng-name .line {
+header .banner .eng-name .line {
   display: inline-block;
   top: 20px;
   height: 1px;
@@ -89,7 +81,7 @@ header .banner .banner-title .eng-name .line {
   background-color: #fff;
 }
 
-header .banner .banner-title .job-title {
+header .banner .job-title {
   font-size: 40px;
   color: #202020;
   font-family: "logo-rounded";
@@ -239,6 +231,7 @@ main .row.skill .skill-item .skill-list .skill-txt span img {
 
 main .row.works {
   position: relative;
+  margin-bottom: 100px;
 }
 
 main .row.works .works-list .filter {
@@ -272,6 +265,10 @@ main .row.works .works-list .my-works {
           justify-content: space-between;
 }
 
+main .row.works .works-list .my-works .work {
+  margin: 30px auto;
+}
+
 main .row.works .works-list .my-works .work .work-item {
   position: relative;
 }
@@ -300,7 +297,24 @@ main .row.works .works-list .my-works .work .work-item img {
 main #contact {
   background-color: #ffdb00;
   position: relative;
-  height: 600px;
+  height: 700px;
+}
+
+main #contact::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 100vw;
+  border-color: transparent transparent #ffdb00 transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #ffdb00;
+  border-left-color: transparent;
+  position: absolute;
+  left: 0;
+  top: -100px;
 }
 
 main #contact .row.contact {
@@ -327,8 +341,6 @@ main #contact .contact-info {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
 }
 
 main #contact .contact-info .info {
@@ -339,8 +351,8 @@ main #contact .contact-info .info a {
   color: #fff;
 }
 
-main #contact .contact-info .contact-img {
-  position: absolute;
-  right: 0px;
+footer {
+  background-color: #ffdb00;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

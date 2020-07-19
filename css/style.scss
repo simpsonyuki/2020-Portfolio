@@ -100,11 +100,6 @@ header {
     }
 
     .banner {
-        background-image: url(../img/banner.png);
-        background-size: cover;
-        background-position: center;
-        height: 1000px;
-        position: relative;
 
         .banner-title {
             position: absolute;
@@ -112,37 +107,38 @@ header {
             top: 600px;
             text-align: center;
 
-            h1 {
-                font-size: 100px;
-                color: #fff;
-            }
+        }
 
-            .eng-name {
-                font-size: 50px;
-                color: #fff;
+        h1 {
+            font-size: 100px;
+            color: #fff;
+        }
 
-                .line {
-                    display: inline-block;
-                    top: 20px;
-                    height: 1px;
-                    width: 160px;
-                    vertical-align: middle;
-                    background-color: #fff;
-                }
-            }
+        .eng-name {
+            font-size: 50px;
+            color: #fff;
 
-            .job-title {
-                font-size: 40px;
-                color: $main-black;
-                font-family: "logo-rounded";
-                letter-spacing: 0.5px;
-                text-shadow: #fff 1px 1px 3px;
+            .line {
+                display: inline-block;
+                top: 20px;
+                height: 1px;
+                width: 160px;
+                vertical-align: middle;
+                background-color: #fff;
             }
         }
 
+        .job-title {
+            font-size: 40px;
+            color: $main-black;
+            font-family: "logo-rounded";
+            letter-spacing: 0.5px;
+            text-shadow: #fff 1px 1px 3px;
+        }
     }
 
 }
+
 
 main {
     section {
@@ -257,6 +253,7 @@ main {
     // 作品集 #works
     .row.works {
         position: relative;
+        margin-bottom: 100px;
 
         .works-list {
 
@@ -280,9 +277,11 @@ main {
                 justify-content: space-between;
 
                 .work {
+                    margin: 30px auto;
 
                     .work-item {
                         position: relative;
+
                         .hover {
 
                             position: absolute;
@@ -310,7 +309,24 @@ main {
     #contact {
         background-color: $main-yellow;
         position: relative;
-        height: 600px;
+        height: 700px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 100px 100vw;
+            border-color: transparent transparent #ffdb00 transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: rgb(255, 219, 0);
+            border-left-color: transparent;
+            position: absolute;
+            left: 0;
+            top: -100px;
+        }
 
         .row.contact {
             position: relative;
@@ -328,25 +344,30 @@ main {
 
             }
         }
-        .contact-info{
+
+        .contact-info {
             display: flex;
             flex-flow: row;
-            grid-template-columns: 1fr 1fr;
 
-            .info{
+
+            .info {
                 color: #fff;
 
-                a{
+                a {
                     color: #fff;
                 }
             }
 
 
-            .contact-img{
-                position: absolute;
-                right: 0px;
-            }
+            .contact-img {}
         }
     }
+
+}
+
+footer {
+    background-color: $main-yellow;
+    color: #fff;
+
 
 }

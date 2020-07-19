@@ -183,6 +183,7 @@ main {
 
     .bg-yellow {
         @include bg-yellow();
+        margin-bottom: 8px;
     }
 
     // 學經歷 #exp

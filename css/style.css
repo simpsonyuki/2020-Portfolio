@@ -98,19 +98,15 @@ header .banner .job-title {
 }
 
 main section {
-  padding: 50px 0;
-  margin-top: 30px;
+  padding: 100px 0 400px 0;
 }
 
 main .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
 }
 
 main .section-title .h3 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #ffdb00;
   display: block;
   position: relative;
@@ -122,7 +118,7 @@ main .section-title .h3::after {
   position: absolute;
   display: block;
   width: 2px;
-  height: 150px;
+  height: 400px;
   background-color: #ffdb00;
   margin-top: 1rem;
   left: 2rem;
@@ -156,7 +152,7 @@ main .row.exp .exp-list {
 
 main .row.exp .exp-list .exp-item {
   height: 260px;
-  padding-top: 115px;
+  padding-top: 7.5rem;
 }
 
 main .row.exp .exp-list .exp-item p {
@@ -178,22 +174,22 @@ main .row.skill .skill-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-top: 7.5rem;
 }
 
 main .row.skill .skill-item .skill-list .title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin: 0 auto;
   background: url(../img/bottom-line-y.svg) repeat-x center bottom;
-  background-size: .75rem;
+  background-size: 1rem;
   text-align: center;
+  width: 25rem;
 }
 
 main .row.skill .skill-item .skill-list .skill-icon {
-  margin-left: -10px;
+  text-align: center;
+  margin: 25px 0;
 }
 
 main .row.skill .skill-item .skill-list .skill-icon img {
@@ -202,11 +198,13 @@ main .row.skill .skill-item .skill-list .skill-icon img {
 }
 
 main .row.skill .skill-item .skill-list .skill-txt {
-  margin-top: 30px;
+  width: 15rem;
+  margin: 0 auto;
 }
 
 main .row.skill .skill-item .skill-list .skill-txt span img {
-  width: 30px;
+  width: 2.3rem;
+  margin-right: .75rem;
 }
 
 main .row.works {
@@ -254,9 +252,6 @@ main .row.works .works-list .my-works {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 main .row.works .works-list .my-works .work {
@@ -310,7 +305,7 @@ main .row.works .works-list .my-works .work .work-item img {
 main #contact {
   background-color: #ffdb00;
   position: relative;
-  height: 700px;
+  height: 600px;
   width: 100%;
 }
 
@@ -320,7 +315,7 @@ main #contact::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 100px 100%;
+  border-width: 0 0 100px 100vw;
   border-color: transparent transparent #ffdb00 transparent;
   border-top-color: transparent;
   border-right-color: transparent;
@@ -343,7 +338,7 @@ main #contact .row.contact .section-title .h3 {
   color: #fff;
 }
 
-main #contact .row.contact .section-title .h3 .line-y {
+main #contact .row.contact .section-title .h3::after {
   background-color: #fff;
 }
 
@@ -355,9 +350,6 @@ main #contact .contact-info {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 main #contact .contact-info .info {

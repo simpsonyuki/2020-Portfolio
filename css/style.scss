@@ -24,7 +24,7 @@ $main-gray: #535353;
 
 // 學經歷區塊樣式
 @mixin sectionH3 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: $main-yellow;
     display: block;
     position: relative;
@@ -35,11 +35,11 @@ $main-gray: #535353;
         position: absolute;
         display: block;
         width: 2px;
-        height: 150px;
+        height: 400px;
         background-color: $main-yellow;
         margin-top: 1rem;
         left: 2rem;
-        
+
     }
 
 }
@@ -152,12 +152,10 @@ header {
 
 main {
     section {
-        padding: 50px 0;
-        margin-top: 30px;
+        padding: 100px 0 400px 0;
     }
 
     .row {
-        justify-content: space-between;
         position: relative;
     }
 
@@ -186,7 +184,7 @@ main {
 
             .exp-item {
                 height: 260px;
-                padding-top: 115px;
+                padding-top: 7.5rem;
 
                 p {
                     display: inline-block;
@@ -208,21 +206,23 @@ main {
 
         .skill-item {
             display: flex;
-            justify-content: space-between;
+            padding-top: 7.5rem;
 
             .skill-list {
 
                 .title {
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
                     letter-spacing: 3px;
-                    margin-bottom: 20px;
+                    margin: 0 auto;
                     background: url(../img/bottom-line-y.svg) repeat-x center bottom;
-                    background-size: .75rem;
+                    background-size: 1rem;
                     text-align: center;
+                    width: 25rem;
                 }
 
                 .skill-icon {
-                    margin-left: -10px;
+                    text-align: center;
+                    margin: 25px 0;
 
                     img {
                         width: 70px;
@@ -231,11 +231,13 @@ main {
                 }
 
                 .skill-txt {
-                    margin-top: 30px;
+                    width: 15rem;
+                    margin: 0 auto;
 
                     span {
                         img {
-                            width: 30px;
+                            width: 2.3rem;
+                            margin-right: .75rem;
                         }
                     }
                 }
@@ -284,7 +286,7 @@ main {
             .my-works {
                 display: flex;
                 flex-flow: row;
-                justify-content: space-between;
+
 
                 .work {
                     margin: 30px auto;
@@ -343,7 +345,7 @@ main {
     #contact {
         background-color: $main-yellow;
         position: relative;
-        height: 700px;
+        height: 600px;
         width: 100%;
 
         &::before {
@@ -352,7 +354,7 @@ main {
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 0 0 100px 100%;
+            border-width: 0 0 100px 100vw;
             border-color: transparent transparent #ffdb00 transparent;
             border-top-color: transparent;
             border-right-color: transparent;
@@ -372,7 +374,7 @@ main {
                 .h3 {
                     color: #fff;
 
-                    .line-y {
+                    &::after {
                         background-color: #fff;
                     }
                 }
@@ -383,7 +385,6 @@ main {
         .contact-info {
             display: flex;
             flex-flow: row;
-            justify-content: space-between;
 
 
             .info {
@@ -414,6 +415,4 @@ main {
 footer {
     background-color: $main-yellow;
     color: #fff;
-
-
 }

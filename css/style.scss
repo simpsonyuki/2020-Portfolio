@@ -346,8 +346,8 @@ main {
     #contact {
         background-color: $main-yellow;
         position: relative;
-        height: 600px;
-        width: 100%;
+        padding: 100px 0 100px 0;
+
 
         &::before {
             content: '';
@@ -365,12 +365,13 @@ main {
             left: 0;
             top: -100px;
         }
-
+        
         .row.contact {
             position: relative;
             flex-direction: row-reverse;
 
             .section-title {
+                margin-top: -7.5rem;
 
                 .h3 {
                     color: #fff;
@@ -385,20 +386,37 @@ main {
 
         .contact-info {
             display: flex;
-            flex-flow: row;
-
+            justify-content: space-around;
 
             .info {
                 color: #fff;
                 font-size: 1.2rem;
+                margin-top: 2rem;
+                .name{
+                    background: url(../img/bottom-line-w.svg) repeat-x center bottom;
+                    background-size: .75rem;
+                    width: 20rem;
+                    margin-bottom: 2rem;
 
-                .my-name {
-                    font-size: 1.8rem;
-                    margin-right: 10px;
+                    .cht-name {
+                        font-size: 3rem;
+                        letter-spacing: 3px;
+                        margin: 0 auto;
+                    }
                 }
 
                 a {
                     color: #fff;
+                }
+
+                ul{
+                    line-height: 4rem;
+                    li{
+                        img{
+                            width: 2.5rem;
+                            margin-right: .75rem;
+                        }
+                    }
                 }
             }
 

@@ -309,8 +309,7 @@ main .row.works .works-list .my-works .work .work-item img {
 main #contact {
   background-color: #ffdb00;
   position: relative;
-  height: 600px;
-  width: 100%;
+  padding: 100px 0 100px 0;
 }
 
 main #contact::before {
@@ -338,6 +337,10 @@ main #contact .row.contact {
           flex-direction: row-reverse;
 }
 
+main #contact .row.contact .section-title {
+  margin-top: -7.5rem;
+}
+
 main #contact .row.contact .section-title .h3 {
   color: #fff;
 }
@@ -350,24 +353,40 @@ main #contact .contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main #contact .contact-info .info {
   color: #fff;
   font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
-main #contact .contact-info .info .my-name {
-  font-size: 1.8rem;
-  margin-right: 10px;
+main #contact .contact-info .info .name {
+  background: url(../img/bottom-line-w.svg) repeat-x center bottom;
+  background-size: .75rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+main #contact .contact-info .info .name .cht-name {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
 }
 
 main #contact .contact-info .info a {
   color: #fff;
+}
+
+main #contact .contact-info .info ul {
+  line-height: 4rem;
+}
+
+main #contact .contact-info .info ul li img {
+  width: 2.5rem;
+  margin-right: .75rem;
 }
 
 main #contact .contact-info .contact-img img {

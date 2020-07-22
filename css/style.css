@@ -109,50 +109,23 @@ main .row {
   position: relative;
 }
 
-main .section-title-r {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: absolute;
-  top: 150px;
-  right: -100px;
-}
-
-main .section-title-r .h3 {
+main .section-title .h3 {
   font-size: 3.5rem;
   color: #ffdb00;
   display: block;
+  position: relative;
+  text-align: center;
 }
 
-main .section-title-r .h3 .line-y {
-  display: inline-block;
-  top: 20px;
-  height: 1px;
-  width: 160px;
-  vertical-align: middle;
-  background-color: #ffdb00;
-}
-
-main .section-title-l {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+main .section-title .h3::after {
+  content: '';
   position: absolute;
-  top: 150px;
-  left: -150px;
-}
-
-main .section-title-l .h3 {
-  font-size: 3.5rem;
-  color: #ffdb00;
   display: block;
-}
-
-main .section-title-l .h3 .line-y {
-  display: inline-block;
-  top: 20px;
-  height: 1px;
-  width: 160px;
-  vertical-align: middle;
+  width: 2px;
+  height: 150px;
   background-color: #ffdb00;
+  margin-top: 1rem;
+  left: 2rem;
 }
 
 main .year {
@@ -178,11 +151,12 @@ main .bg-yellow .status {
 
 main .row.exp .exp-list {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 main .row.exp .exp-list .exp-item {
-  height: 300px;
-  clear: both;
+  height: 260px;
+  padding-top: 115px;
 }
 
 main .row.exp .exp-list .exp-item p {
@@ -198,10 +172,6 @@ main .row.skill {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-main .row.skill .h3 .line-y {
-  width: 100px;
 }
 
 main .row.skill .skill-item {
@@ -369,11 +339,11 @@ main #contact .row.contact {
           flex-direction: row-reverse;
 }
 
-main #contact .row.contact .section-title-l .h3 {
+main #contact .row.contact .section-title .h3 {
   color: #fff;
 }
 
-main #contact .row.contact .section-title-l .h3 .line-y {
+main #contact .row.contact .section-title .h3 .line-y {
   background-color: #fff;
 }
 

@@ -212,6 +212,10 @@ main .row.works {
   margin-bottom: 100px;
 }
 
+main .row.works .works-list {
+  padding-top: 7.5rem;
+}
+
 main .row.works .works-list .filter {
   font-size: 1.2rem;
 }

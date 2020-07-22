@@ -40,17 +40,18 @@ $main-gray: #535353;
 }
 
 @mixin year {
+    height: 2rem;
+
     img {
         width: 100px;
     }
-
-    margin-left: 20px;
 }
 
 @mixin bg-yellow {
     background-color: $main-yellow;
     display: inline-block;
-    padding: 10px 30px;
+    width: 15rem;
+    padding: 10px 0;
     
     .status {
         margin-right: 10px;
@@ -188,33 +189,24 @@ main {
 
     // 學經歷 #exp
     .row.exp {
-        position: relative;
 
         .exp-list {
-            position: relative;
-            height: 450px;
+            text-align: center;
 
             .exp-item {
-                position: absolute;
+                height: 300px;
+                clear: both;
 
                 p{
                     display: inline-block;
-                    margin-left: 20px;
                 }
 
-                ul{
-                    margin-left: 30px;
+                &:nth-child(3)>.year>img{
+                    
+                        margin-top: 7px;
+                    
                 }
 
-                &:nth-child(2){
-                    top: 150px;
-                    left: 200px;
-                }
-
-                &:nth-child(3){
-                    top: 300px;
-                    left: 380px;
-                }
             }
 
         }
@@ -238,16 +230,12 @@ main {
             .skill-list {
 
                 .title {
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                     letter-spacing: 3px;
                     margin-bottom: 20px;
                     background: url(../img/bottom-line-y.svg) repeat-x center bottom;
                     background-size: .75rem;
-
-                    &::after {
-                        // content: '';
-                        // margin-top: -0.7rem;
-                    }
+                    text-align: center;
                 }
 
                 .skill-icon {

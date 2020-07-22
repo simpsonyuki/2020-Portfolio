@@ -156,7 +156,7 @@ main .section-title-l .h3 .line-y {
 }
 
 main .year {
-  margin-left: 20px;
+  height: 2rem;
 }
 
 main .year img {
@@ -166,7 +166,8 @@ main .year img {
 main .bg-yellow {
   background-color: #ffdb00;
   display: inline-block;
-  padding: 10px 30px;
+  width: 15rem;
+  padding: 10px 0;
   margin-bottom: 8px;
 }
 
@@ -175,36 +176,21 @@ main .bg-yellow .status {
   color: #fff;
 }
 
-main .row.exp {
-  position: relative;
-}
-
 main .row.exp .exp-list {
-  position: relative;
-  height: 450px;
+  text-align: center;
 }
 
 main .row.exp .exp-list .exp-item {
-  position: absolute;
+  height: 300px;
+  clear: both;
 }
 
 main .row.exp .exp-list .exp-item p {
   display: inline-block;
-  margin-left: 20px;
 }
 
-main .row.exp .exp-list .exp-item ul {
-  margin-left: 30px;
-}
-
-main .row.exp .exp-list .exp-item:nth-child(2) {
-  top: 150px;
-  left: 200px;
-}
-
-main .row.exp .exp-list .exp-item:nth-child(3) {
-  top: 300px;
-  left: 380px;
+main .row.exp .exp-list .exp-item:nth-child(3) > .year > img {
+  margin-top: 7px;
 }
 
 main .row.skill {
@@ -228,11 +214,12 @@ main .row.skill .skill-item {
 }
 
 main .row.skill .skill-item .skill-list .title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 3px;
   margin-bottom: 20px;
   background: url(../img/bottom-line-y.svg) repeat-x center bottom;
   background-size: .75rem;
+  text-align: center;
 }
 
 main .row.skill .skill-item .skill-list .skill-icon {

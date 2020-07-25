@@ -42,8 +42,8 @@ header .menu {
 }
 
 header .menu .menu-line {
-  height: 3px;
-  width: 40px;
+  height: .15rem;
+  width: 2rem;
   background-color: #ffdb00;
 }
 
@@ -62,8 +62,23 @@ header .banner {
 header .banner .banner-title {
   position: absolute;
   right: 30px;
-  bottom: 90px;
+  bottom: 6rem;
   text-align: center;
+}
+
+@media all and (max-width: 992px) {
+  header .banner .banner-title {
+    bottom: 3rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header .banner .banner-title {
+    bottom: 1rem;
+  }
+  header .banner .banner-title p {
+    margin-bottom: .75rem;
+  }
 }
 
 header .banner .banner-bg img {
@@ -71,7 +86,7 @@ header .banner .banner-bg img {
 }
 
 header .banner .cht-name {
-  width: 30vw;
+  width: 25vw;
 }
 
 header .banner .cht-name img {
@@ -79,7 +94,7 @@ header .banner .cht-name img {
 }
 
 header .banner .eng-name {
-  width: 30vw;
+  width: 25vw;
 }
 
 header .banner .eng-name img {
@@ -87,7 +102,7 @@ header .banner .eng-name img {
 }
 
 header .banner .job-title {
-  width: 30vw;
+  width: 25vw;
 }
 
 header .banner .job-title img {
@@ -100,7 +115,7 @@ main section {
 
 @media all and (max-width: 992px) {
   main section {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 50px 0;
   }
 }
 
@@ -133,7 +148,7 @@ main .section-title .h3::after {
   }
   main .section-title .h3::after {
     display: inline-block;
-    width: 300px;
+    width: 400px;
     height: 2px;
     margin-top: 2.5rem;
     margin-left: 1rem;
@@ -142,8 +157,22 @@ main .section-title .h3::after {
 }
 
 @media all and (max-width: 768px) {
+  main .section-title .h3 {
+    font-size: 3.5rem;
+  }
   main .section-title .h3::after {
-    width: 200px;
+    width: 250px;
+    margin-top: 2.1rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  main .section-title .h3 {
+    font-size: 3rem;
+  }
+  main .section-title .h3::after {
+    width: 120px;
+    margin-top: 2rem;
   }
 }
 
@@ -178,12 +207,25 @@ main .row.exp .exp-list .exp-item {
   padding-top: 7.5rem;
 }
 
-main .row.exp .exp-list .exp-item p {
-  display: inline-block;
-}
-
 main .row.exp .exp-list .exp-item:nth-child(3) > .year > img {
   margin-top: 7px;
+}
+
+main .row.exp p {
+  text-align: center;
+}
+
+@media all and (max-width: 992px) {
+  main .row.exp .exp-list .exp-item {
+    height: 100%;
+    padding-top: 3.5rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  main .row.exp p {
+    text-align: left;
+  }
 }
 
 main .row.skill {
@@ -228,6 +270,27 @@ main .row.skill .skill-item .skill-list .skill-txt {
 main .row.skill .skill-item .skill-list .skill-txt span img {
   width: 2.3rem;
   margin-right: .75rem;
+}
+
+@media all and (max-width: 992px) {
+  main .row.skill .skill-item {
+    padding-top: 4.5rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  main .row.skill .skill-item {
+    padding-top: 3rem;
+  }
+  main .row.skill .skill-item .skill-list {
+    margin-top: 2rem;
+  }
+  main .row.skill .skill-item .skill-list .title {
+    width: 20rem;
+  }
+  main .row.skill .skill-item .skill-list .skill-icon img {
+    width: 60px;
+  }
 }
 
 main .row.works {
@@ -329,6 +392,25 @@ main .row.works .works-list .my-works .work .work-item img {
   width: 100%;
 }
 
+@media all and (max-width: 992px) {
+  main .row.works .works-list {
+    padding-top: 3.5rem;
+  }
+  main .row.works .works-list .filter ul li {
+    padding: 0 20px;
+  }
+  main .row.works .works-list .my-works .work {
+    margin: 10px auto;
+  }
+}
+
+@media all and (max-width: 992px) {
+  main .row.works .works-list .filter ul li {
+    padding: 0 10px;
+    font-size: 1.1rem;
+  }
+}
+
 main #contact {
   background-color: #ffdb00;
   position: relative;
@@ -372,7 +454,7 @@ main #contact .row.contact .section-title .h3::after {
   background-color: #fff;
 }
 
-main #contact .contact-info {
+main #contact .row.contact .contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,40 +462,67 @@ main #contact .contact-info {
       justify-content: space-around;
 }
 
-main #contact .contact-info .info {
+main #contact .row.contact .contact-info .info {
   color: #fff;
   font-size: 1.2rem;
   margin-top: 2rem;
 }
 
-main #contact .contact-info .info .name {
+main #contact .row.contact .contact-info .info .name {
   background: url(../img/bottom-line-w.svg) repeat-x center bottom;
   background-size: .75rem;
   width: 20rem;
   margin-bottom: 2rem;
 }
 
-main #contact .contact-info .info .name .cht-name {
+main #contact .row.contact .contact-info .info .name .cht-name {
   font-size: 3rem;
   letter-spacing: 3px;
   margin: 0 auto;
 }
 
-main #contact .contact-info .info a {
+main #contact .row.contact .contact-info .info a {
   color: #fff;
 }
 
-main #contact .contact-info .info ul {
+main #contact .row.contact .contact-info .info ul {
   line-height: 4rem;
 }
 
-main #contact .contact-info .info ul li img {
+main #contact .row.contact .contact-info .info ul li img {
   width: 2.5rem;
   margin-right: .75rem;
 }
 
-main #contact .contact-info .contact-img img {
+main #contact .row.contact .contact-info .contact-img img {
   width: 100%;
+}
+
+@media all and (max-width: 992px) {
+  main #contact .row.contact .section-title {
+    margin-top: -2.5rem;
+  }
+  main #contact .row.contact .contact-info .info .name {
+    width: 17rem;
+    margin-bottom: 1rem;
+    background-size: .6rem;
+  }
+  main #contact .row.contact .contact-info .info .name .cht-name {
+    font-size: 2.4rem;
+    letter-spacing: 0px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  main #contact .row.contact .contact-info .info .name {
+    width: 15rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  main #contact .row.contact .contact-info .info .name {
+    width: 13rem;
+  }
 }
 
 footer {

@@ -70,35 +70,38 @@ header .banner .banner-bg img {
   width: 100%;
 }
 
-header .banner h1 {
-  font-size: 6rem;
-  color: #fff;
+header .banner .cht-name {
+  width: 30vw;
+}
+
+header .banner .cht-name img {
+  width: 100%;
 }
 
 header .banner .eng-name {
-  font-size: 3rem;
-  color: #fff;
+  width: 30vw;
 }
 
-header .banner .eng-name .line {
-  display: inline-block;
-  top: 20px;
-  height: 1px;
-  width: 160px;
-  vertical-align: middle;
-  background-color: #fff;
+header .banner .eng-name img {
+  width: 100%;
 }
 
 header .banner .job-title {
-  font-size: 40px;
-  color: #202020;
-  font-family: "logo-rounded";
-  letter-spacing: 0.5px;
-  text-shadow: #fff 1px 1px 3px;
+  width: 30vw;
+}
+
+header .banner .job-title img {
+  width: 100%;
 }
 
 main section {
-  padding: 100px 0 400px 0;
+  padding: 100px 0 200px 0;
+}
+
+@media all and (max-width: 992px) {
+  main section {
+    padding: 100px 0 100px 0;
+  }
 }
 
 main .row {
@@ -135,6 +138,12 @@ main .section-title .h3::after {
     margin-top: 2.5rem;
     margin-left: 1rem;
     left: auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  main .section-title .h3::after {
+    width: 200px;
   }
 }
 

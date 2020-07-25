@@ -516,12 +516,16 @@ main #contact .row.contact .contact-info .contact-img img {
 @media all and (max-width: 768px) {
   main #contact .row.contact .contact-info .info .name {
     width: 15rem;
+    background-size: .5rem;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 576px) {
   main #contact .row.contact .contact-info .info .name {
-    width: 13rem;
+    width: 12rem;
+  }
+  main #contact .row.contact .contact-info .info .name .cht-name {
+    font-size: 1.8rem;
   }
 }
 

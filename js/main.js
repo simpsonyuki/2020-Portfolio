@@ -10,11 +10,8 @@ $(function () {
 });
 
 
-// 作品及篩選器
- var $container = $('.my-works'),
-      $body = $('body'),
-      colW = 375,
-      columns = null;
+// 作品及篩選器----未完成
+ var $container = $('.my-works');
 
   $('.works-nav li a').click(function(){
         $('.works-nav .current').removeClass('current');
@@ -23,6 +20,7 @@ $(function () {
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
+            layoutMode: 'fitRows'
          });
          return false;
     });

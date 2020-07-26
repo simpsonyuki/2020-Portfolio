@@ -11,13 +11,14 @@ $(function () {
 
 
 // 作品及篩選器----待修正
- var $container = $('.my-works');
+ var $container = $('.my-works').isotope({});
 
   $('.works-nav li a').click(function(){
         $('.works-nav .current').removeClass('current');
         $(this).addClass('current');
  
         var selector = $(this).attr('data-filter');
+        console.log(selector);
         $container.isotope({
             filter: selector,
             layoutMode: 'fitRows'

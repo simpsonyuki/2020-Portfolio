@@ -28,6 +28,16 @@
   font-family: "genjyuu-m";
 }
 
+*::-moz-selection {
+  background: #ffdb00;
+  color: #ffffff;
+}
+
+*::selection {
+  background: #ffdb00;
+  color: #ffffff;
+}
+
 header {
   position: relative;
 }

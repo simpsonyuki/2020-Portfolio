@@ -397,10 +397,10 @@ main {
         .works-list {
             padding-top: 7.5rem;
 
-            .filter {
+            .works-filter {
                 font-size: 1.2rem;
 
-                ul {
+                .works-nav {
                     display: flex;
                     flex-flow: row;
                     justify-content: center;
@@ -409,17 +409,20 @@ main {
                     li {
                         padding: 0 30px;
 
-                        &.active {
-                            &::after {
-                                content: '';
-                                background-image: url(../img/bottom-line-y.svg);
-                                width: 150%;
-                                height: 10px;
-                                display: block;
-                                margin-top: -0.5rem;
-                                margin-left: -30px;
+                        a{
+                            color: $main-black;
+                            text-decoration: none;
+                            background: rgba(0, 0, 0, 0) linear-gradient(transparent 50%, $main-yellow 0%) repeat scroll 0 0;
+                            background-size: 100% 200%;
+                            background-position: 0% 0%;
+                            transition:all 0.3s ease;
+                            padding: 0 20px;
+
+                            &.current, &:hover{
+                                background-position: 0% 50%;
                             }
                         }
+
                     }
                 }
 

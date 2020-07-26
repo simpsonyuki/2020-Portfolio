@@ -338,11 +338,11 @@ main .row.works .works-list {
   padding-top: 7.5rem;
 }
 
-main .row.works .works-list .filter {
+main .row.works .works-list .works-filter {
   font-size: 1.2rem;
 }
 
-main .row.works .works-list .filter ul {
+main .row.works .works-list .works-filter .works-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,18 +356,24 @@ main .row.works .works-list .filter ul {
   text-align: center;
 }
 
-main .row.works .works-list .filter ul li {
+main .row.works .works-list .works-filter .works-nav li {
   padding: 0 30px;
 }
 
-main .row.works .works-list .filter ul li.active::after {
-  content: '';
-  background-image: url(../img/bottom-line-y.svg);
-  width: 150%;
-  height: 10px;
-  display: block;
-  margin-top: -0.5rem;
-  margin-left: -30px;
+main .row.works .works-list .works-filter .works-nav li a {
+  color: #202020;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(0%, #ffdb00)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(transparent 50%, #ffdb00 0%) repeat scroll 0 0;
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0 20px;
+}
+
+main .row.works .works-list .works-filter .works-nav li a.current, main .row.works .works-list .works-filter .works-nav li a:hover {
+  background-position: 0% 50%;
 }
 
 main .row.works .works-list .my-works {

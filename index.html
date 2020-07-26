@@ -205,19 +205,19 @@
                         <div class="h3">作品集</div>
                     </div>
                     <div class="works-list col-lg-11 col-12">
-                        <div class="filter col-12" data-aos="fade-down" data-aos-easing="ease-in-sine"
+                        <div class="works-filter col-12" data-aos="fade-down" data-aos-easing="ease-in-sine"
                             data-aos-delay="300" data-aos-duration="600">
-                            <ul>
-                                <li>全部</li>
-                                <li>網頁設計</li>
-                                <li>APP UI</li>
-                                <li>平面設計</li>
+                            <ul class="works-nav">
+                                <li class="work-all"><a href="#" data-filter="*" class="current">全部</a></li>
+                                <li><a href="#" data-filter=".webdesign" >網頁設計</a></li>
+                                <li><a href="#" data-filter=".appdesign" >APP UI</a></li>
+                                <li><a href="#" data-filter=".graphic" >平面設計</a></li>
                             </ul>
                         </div>
                         <div class="my-works col-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"
                             data-aos-delay="800" data-aos-duration="800">
                             <div class="row">
-                                <div class="work col-lg-4 col-6">
+                                <div class="work col-lg-4 col-6 appdesign">
                                     <div class="work-item">
                                         <div class="hover">
                                             <div class="details">
@@ -228,7 +228,7 @@
                                         <img src="./img/Portfolio-pic1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="work col-lg-4 col-6">
+                                <div class="work col-lg-4 col-6 appdesign">
                                     <div class="work-item">
                                         <div class="hover">
                                             <div class="details">
@@ -239,33 +239,33 @@
                                         <img src="./img/Portfolio-pic1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="work col-lg-4 col-6">
+                                <div class="work col-lg-4 col-6 webdesign">
                                     <div class="work-item">
                                         <div class="hover">
                                             <div class="details">
-                                                <div class="text-center cata">APP UI</div>
+                                                <div class="text-center cata">網頁設計</div>
                                                 <div class="text-center project">診所預約掛號APP</div>
                                             </div>
                                         </div>
                                         <img src="./img/Portfolio-pic1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="work col-lg-4 col-6">
+                                <div class="work col-lg-4 col-6 graphic">
                                     <div class="work-item">
                                         <div class="hover">
                                             <div class="details">
-                                                <div class="text-center cata">APP UI</div>
+                                                <div class="text-center cata">平面設計</div>
                                                 <div class="text-center project">診所預約掛號APP</div>
                                             </div>
                                         </div>
                                         <img src="./img/Portfolio-pic1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="work col-lg-4 col-6">
+                                <div class="work col-lg-4 col-6 graphic">
                                     <div class="work-item">
                                         <div class="hover">
                                             <div class="details">
-                                                <div class="text-center cata">APP UI</div>
+                                                <div class="text-center cata">平面設計</div>
                                                 <div class="text-center project">診所預約掛號APP</div>
                                             </div>
                                         </div>
@@ -361,6 +361,7 @@
     </script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.isotope.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -10,7 +10,7 @@ $(function () {
 });
 
 
-// 作品及篩選器----待修正
+// 作品集篩選器
  var $container = $('.my-works').isotope({});
 
   $('.works-nav li a').click(function(){

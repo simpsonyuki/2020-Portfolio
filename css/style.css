@@ -451,7 +451,8 @@ main .row.works .works-list .my-works .work .work-item img {
 
 @media all and (max-width: 992px) {
   main .row.works .works-list .works-filter .works-nav li {
-    font-size: 1.1rem;
+    padding: 0;
+    font-size: .9rem;
   }
 }
 

@@ -1,6 +1,16 @@
 
   AOS.init();
 
+
+// 漢堡選單
+$(function() {
+    $('.menu').on('click', function() {
+      $(this).toggleClass('active');
+    });
+    
+  });
+
+
 // back-to-top
   $(document).ready(function(){
     $(window).scroll(function () {

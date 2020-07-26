@@ -343,16 +343,10 @@ main .row.works .works-list .works-filter {
 }
 
 main .row.works .works-list .works-filter .works-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
 
@@ -449,10 +443,17 @@ main .row.works .works-list .my-works .work .work-item img {
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 576px) {
   main .row.works .works-list .works-filter .works-nav li {
     padding: 0;
     font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 400px) {
+  main .row.works .works-list .works-filter .works-nav li {
+    padding: 0;
+    font-size: .75rem;
   }
 }
 
@@ -468,7 +469,7 @@ main #contact::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 100px 99vw;
+  border-width: 0 0 50px 99vw;
   border-color: transparent transparent #ffdb00 transparent;
   border-top-color: transparent;
   border-right-color: transparent;
@@ -476,7 +477,7 @@ main #contact::before {
   border-left-color: transparent;
   position: absolute;
   right: 0;
-  top: -100px;
+  top: -50px;
 }
 
 main #contact .row.contact {

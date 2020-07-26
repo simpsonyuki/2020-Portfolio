@@ -312,14 +312,14 @@ main .row.skill .skill-item .skill-list .skill-txt span img {
   main .row.skill .skill-item {
     padding-top: 4.5rem;
   }
+  main .row.skill .skill-item .skill-list:nth-child(2) {
+    margin-top: 2.5rem;
+  }
 }
 
 @media all and (max-width: 576px) {
   main .row.skill .skill-item {
     padding-top: 3rem;
-  }
-  main .row.skill .skill-item .skill-list {
-    margin-top: 2rem;
   }
   main .row.skill .skill-item .skill-list .title {
     width: 20rem;
@@ -438,8 +438,11 @@ main .row.works .works-list .my-works .work .work-item img {
   main .row.works .works-list {
     padding-top: 3.5rem;
   }
-  main .row.works .works-list .filter ul li {
-    padding: 0 20px;
+  main .row.works .works-list .works-filter .works-nav li {
+    padding: 0 10px;
+  }
+  main .row.works .works-list .works-filter .works-nav li a {
+    padding: 0 10px;
   }
   main .row.works .works-list .my-works .work {
     margin: 10px auto;
@@ -447,8 +450,7 @@ main .row.works .works-list .my-works .work .work-item img {
 }
 
 @media all and (max-width: 992px) {
-  main .row.works .works-list .filter ul li {
-    padding: 0 10px;
+  main .row.works .works-list .works-filter .works-nav li {
     font-size: 1.1rem;
   }
 }
@@ -465,14 +467,14 @@ main #contact::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 100px 100vw;
+  border-width: 0 0 100px 99vw;
   border-color: transparent transparent #ffdb00 transparent;
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: #ffdb00;
   border-left-color: transparent;
   position: absolute;
-  left: 0;
+  right: 0;
   top: -100px;
 }
 

@@ -10,7 +10,7 @@ $(function () {
 });
 
 
-// 作品及篩選器----未完成
+// 作品及篩選器----待修正
  var $container = $('.my-works');
 
   $('.works-nav li a').click(function(){

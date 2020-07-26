@@ -362,6 +362,12 @@ main {
 
             @media all and (max-width: $media-md) {
                 padding-top: 4.5rem;
+                .skill-list {
+
+                    &:nth-child(2){
+                        margin-top: 2.5rem;
+                    }
+                }
 
             }
 
@@ -369,7 +375,6 @@ main {
                 padding-top: 3rem;
 
                 .skill-list {
-                    margin-top: 2rem;
 
                     .title {
                         width: 20rem;
@@ -486,12 +491,16 @@ main {
             @media all and (max-width: $media-md) {
                 padding-top: 3.5rem;
 
-                .filter {
+                .works-filter {
 
-                    ul {
+                    .works-nav {
 
                         li {
-                            padding: 0 20px;
+                            padding: 0 10px;
+
+                            a{
+                                padding: 0 10px;
+                            }
                         }
                     }
                 }
@@ -506,12 +515,11 @@ main {
 
             @media all and (max-width: $media-md) {
 
-                .filter {
+                .works-filter {
 
-                    ul {
+                    .works-nav {
 
                         li {
-                            padding: 0 10px;
                             font-size: 1.1rem;
                         }
                     }
@@ -534,14 +542,14 @@ main {
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 0 0 100px 100vw;
+            border-width: 0 0 100px 99vw;
             border-color: transparent transparent #ffdb00 transparent;
             border-top-color: transparent;
             border-right-color: transparent;
             border-bottom-color: rgb(255, 219, 0);
             border-left-color: transparent;
             position: absolute;
-            left: 0;
+            right: 0;
             top: -100px;
         }
 

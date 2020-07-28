@@ -1,7 +1,5 @@
 AOS.init();
 
-// wow.js
-// new WOW().init();
 
 // 作品集篩選器
  var $container = $('.my-works').isotope({});
@@ -19,4 +17,4 @@ AOS.init();
     });
 
 
-// back-to-top
+// back-to-top--未完成

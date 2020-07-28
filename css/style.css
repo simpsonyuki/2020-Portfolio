@@ -57,7 +57,9 @@ header .banner .banner-title {
   header .banner .banner-title {
     bottom: 3rem;
   }
-  header .banner .banner-title .cht-name, header .banner .banner-title .eng-name, header .banner .banner-title .job-title {
+  header .banner .banner-title .cht-name,
+  header .banner .banner-title .eng-name,
+  header .banner .banner-title .job-title {
     width: 18vw;
   }
 }
@@ -77,7 +79,9 @@ header .banner .banner-title {
     right: 1rem;
     bottom: 1rem;
   }
-  header .banner .banner-title .cht-name, header .banner .banner-title .eng-name, header .banner .banner-title .job-title {
+  header .banner .banner-title .cht-name,
+  header .banner .banner-title .eng-name,
+  header .banner .banner-title .job-title {
     width: 18;
   }
   header .banner .banner-title p {
@@ -89,11 +93,15 @@ header .banner .banner-bg img {
   width: 100%;
 }
 
-header .banner .cht-name, header .banner .eng-name, header .banner .job-title {
+header .banner .cht-name,
+header .banner .eng-name,
+header .banner .job-title {
   width: 20vw;
 }
 
-header .banner .cht-name img, header .banner .eng-name img, header .banner .job-title img {
+header .banner .cht-name img,
+header .banner .eng-name img,
+header .banner .job-title img {
   width: 100%;
 }
 
@@ -338,6 +346,7 @@ main .row.works .works-list .my-works .work {
 
 main .row.works .works-list .my-works .work .work-item {
   position: relative;
+  cursor: pointer;
 }
 
 main .row.works .works-list .my-works .work .work-item:hover .hover {
@@ -532,75 +541,100 @@ footer {
   color: #fff;
 }
 
-#back-to-top {
-  width: 40px;
-  height: 40px;
-  background: #535353;
-  padding: 20px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
+.portfolio-modal {
+  padding-right: 0 !important;
+}
+
+.portfolio-modal a {
+  text-decoration: none;
+}
+
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+.portfolio-modal .modal-dialog .modal-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.portfolio-modal .modal-dialog .modal-content .close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.portfolio-modal .modal-dialog .modal-content .close-modal .menu-line {
   display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffdb00;
+  margin-top: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-#back-to-top i {
-  color: #fff;
-  top: -14px;
-  right: 8px;
-  position: relative;
+.portfolio-modal .modal-dialog .modal-content .close-modal .menu-line.line-1 {
+  -webkit-transform: translateY(16px) rotate(45deg);
+          transform: translateY(16px) rotate(45deg);
 }
 
-.back-to-top.back-to-top-fade-out {
-  opacity: .4;
+.portfolio-modal .modal-dialog .modal-content .close-modal .menu-line.line-3 {
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
 }
 
-.back-to-top.back-to-top-is-visible {
-  visibility: visible;
-  opacity: .6;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.portfolio-modal .modal-dialog .modal-content .close-modal:hover .menu-line.line-1 {
+  -webkit-transform: translateY(0) rotate(0);
+          transform: translateY(0) rotate(0);
 }
 
-.back-to-top, .back-to-top:hover {
-  color: #fff;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.portfolio-modal .modal-dialog .modal-content .close-modal:hover .menu-line.line-3 {
+  -webkit-transform: translateY(-16px) rotate(0);
+          transform: translateY(-16px) rotate(0);
 }
 
-.back-to-top, .form-control, span {
-  font-weight: 400;
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body h2 {
+  font-size: 3em;
+  color: #202020;
+  background: url(../img/bottom-line-y.svg) repeat-x center bottom;
+  background-size: 1rem;
+  width: 25rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.back-to-top, .header .nav-item-child, .link {
-  text-transform: uppercase;
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body p {
+  margin-bottom: 30px;
 }
 
-.back-to-top.back-to-top-fade-out:hover {
-  opacity: 1;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body p.item-intro {
+  font-size: 16px;
+  margin: 20px 0 30px;
+  color: #535353;
 }
 
-.back-to-top.back-to-top-is-visible:hover {
-  opacity: 1;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex {
+  text-align: center;
+}
+
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex img, .portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex .mb30 {
+  margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex .mr10 {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

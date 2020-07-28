@@ -1,14 +1,7 @@
 AOS.init();
 
-
-// 漢堡選單
-$(function () {
-  $('.menu').on('click', function () {
-    $(this).toggleClass('active');
-  });
-
-});
-
+// wow.js
+// new WOW().init();
 
 // 作品集篩選器
  var $container = $('.my-works').isotope({});

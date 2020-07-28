@@ -545,6 +545,10 @@ footer {
   padding-right: 0 !important;
 }
 
+.portfolio-modal img {
+  margin-bottom: 30px;
+}
+
 .portfolio-modal a {
   text-decoration: none;
 }
@@ -630,11 +634,11 @@ footer {
           justify-content: center;
 }
 
-.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex img, .portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex .mb30 {
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body img, .portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .mb30 {
   margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .modal-flex .mr10 {
+.portfolio-modal .modal-dialog .modal-content .close-modal .modal-body .mr10 {
   margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

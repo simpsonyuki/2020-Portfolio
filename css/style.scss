@@ -677,6 +677,9 @@ footer {
 // Modal
 .portfolio-modal {
     padding-right: 0 !important;
+    img{
+        margin-bottom: 30px;
+    }
 
     a {
         text-decoration: none;
@@ -757,16 +760,16 @@ footer {
                             justify-content: center;
 
                         }
-
-                        img, .mb30 {
-                            margin-bottom: 30px;
-                        }
-
-                        .mr10 {
-                            margin-right: 10px;
-                        }
                     }
 
+
+                    img, .mb30 {
+                        margin-bottom: 30px;
+                    }
+
+                    .mr10 {
+                        margin-right: 10px;
+                    }
                 }
             }
         }

@@ -121,6 +121,7 @@ $media-xxs: 400px;
     }
 }
 
+// header
 header {
     position: relative;
 
@@ -129,18 +130,12 @@ header {
 
         .banner-title {
             position: absolute;
-            right: 4rem;
-            bottom: 6rem;
-            text-align: center;
+            right: 6rem;
+            bottom: 4rem;
 
             @media all and (max-width: $media-md) {
                 bottom: 3rem;
 
-                .cht-name,
-                .eng-name,
-                .job-title {
-                    width: 18vw;
-                }
             }
 
             @media all and (max-width: $media-sm) {
@@ -156,11 +151,6 @@ header {
                 right: 1rem;
                 bottom: 1rem;
 
-                .cht-name,
-                .eng-name,
-                .job-title {
-                    width: 18;
-                }
 
                 p {
                     margin-bottom: 0rem;
@@ -170,19 +160,36 @@ header {
         }
 
         .banner-bg {
-            img {
-                width: 100%;
-            }
+            background-image: url(../img/banner.png);
+            background-size: cover;   
+            height: 100vh;
+
         }
 
-        .cht-name,
-        .eng-name,
-        .job-title {
-            width: 20vw;
+        .cht-name{
+            font-size: 6rem;
+            color: #fff;
+            
+        }
+        .eng-name{
+            font-size: 4rem;
+            color: #fff;
+            margin-top: -2rem;
 
-            img {
-                width: 100%;
+            &::after{
+                content: '';
+                display: inline-block;
+                background-color: #fff;
+                height: 3px;
+                width: 9.5rem;
+                position: absolute;
+                bottom: 9.5rem;
+                margin-left: 15px;
             }
+        }
+        .job-title {
+            font-size: 3rem;
+            color: #fff;
         }
     }
 

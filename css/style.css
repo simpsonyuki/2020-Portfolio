@@ -82,6 +82,7 @@ header .banner .banner-bg {
   background-image: url(../img/banner.png);
   background-size: cover;
   height: 100vh;
+  background-position: center;
 }
 
 header .banner .cht-name {

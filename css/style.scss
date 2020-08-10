@@ -134,26 +134,61 @@ header {
             bottom: 4rem;
 
             @media all and (max-width: $media-md) {
-                bottom: 3rem;
+
+                .cht-name {
+                    font-size: 5rem;
+                }
+
+                .eng-name {
+                    font-size: 3rem;
+
+                    &::after {
+                        height: 2px;
+                        width: 7rem;
+                        bottom: 6.5rem;
+                    }
+                }
+
+                .job-title {
+                    font-size: 2.3rem;
+                    margin-top: -20px;
+                    text-shadow: 2px 2px 2px #fff;
+                }
 
             }
 
             @media all and (max-width: $media-sm) {
-                right: 3rem;
-                bottom: 2rem;
+                .cht-name {
+                    text-shadow: 2px 2px 2px $main-gray;
+                }
 
-                p {
-                    margin-bottom: .5rem;
+                .eng-name {
+                    text-shadow: 2px 2px 2px $main-gray;
+
+                    &::after {
+                        height: 2px;
+                        width: 7rem;
+                        bottom: 6.5rem;
+                        box-shadow: 2px 2px 2px $main-gray;
+                    }
+                }
+
+                .job-title {
+                    font-size: 2.3rem;
+                    margin-top: -20px;
+                    text-shadow: 2px 2px 2px #fff;
                 }
             }
 
             @media all and (max-width: $media-xs) {
-                right: 1rem;
-                bottom: 1rem;
+                bottom: 6rem;
 
+                .eng-name {
+                    
 
-                p {
-                    margin-bottom: 0rem;
+                    &::after {
+                        bottom: 6.5rem;
+                    }
                 }
             }
 
@@ -161,22 +196,23 @@ header {
 
         .banner-bg {
             background-image: url(../img/banner.png);
-            background-size: cover;   
+            background-size: cover;
             height: 100vh;
             background-position: center;
         }
 
-        .cht-name{
+        .cht-name {
             font-size: 6rem;
             color: #fff;
-            
+
         }
-        .eng-name{
+
+        .eng-name {
             font-size: 4rem;
             color: #fff;
             margin-top: -2rem;
 
-            &::after{
+            &::after {
                 content: '';
                 display: inline-block;
                 background-color: #fff;
@@ -187,9 +223,10 @@ header {
                 margin-left: 15px;
             }
         }
+
         .job-title {
             font-size: 3rem;
-            color: #fff;
+            color: $main-black;
         }
     }
 
@@ -684,7 +721,8 @@ footer {
 // Modal
 .portfolio-modal {
     padding-right: 0 !important;
-    img{
+
+    img {
         margin-bottom: 30px;
     }
 
@@ -770,7 +808,8 @@ footer {
                     }
 
 
-                    img, .mb30 {
+                    img,
+                    .mb30 {
                         margin-bottom: 30px;
                     }
 

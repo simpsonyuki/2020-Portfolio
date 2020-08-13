@@ -792,12 +792,13 @@ footer {
                         text-align: center;
                         margin: 0 auto;
 
-                        &::before{
+                        &::before {
                             content: '{';
                             color: $main-yellow;
                             padding-right: 12px;
                         }
-                        &::after{
+
+                        &::after {
                             content: '}';
                             color: $main-yellow;
                             padding-left: 12px;
@@ -816,7 +817,24 @@ footer {
                     }
 
                 }
+                .demo-link{
+                    background-color: $main-yellow;
+                    border: 3px solid $main-yellow;
+                    color: #fff;
+                    padding: 20px;
+                    margin: -20px 0 30px;
+                    font-size: 1.2rem;
+                    transition: all 0.3s ease-in-out;
 
+                    i{
+                        margin-left: 20px;
+                    }
+
+                    &:hover{
+                        background-color: #fff;
+                        color: $main-gray;
+                    }
+                }
 
 
                 .modal-flex {
@@ -828,48 +846,43 @@ footer {
                     }
                 }
 
-                .modal-footer{
-                    border-top:0;
+                .modal-footer {
+                    border-top: 0;
                     justify-content: center;
                     margin-top: 30px;
                     cursor: pointer;
 
                     .menu-line {
-                        display: block;
                         width: 3rem;
                         height: 4px;
                         border-radius: 4px;
                         background-color: #cfcfcf;
                         margin-top: 12px;
                         transition: all 0.3s ease-in-out;
-                        
-    
+
+
                         &.line-1 {
                             transform: translateX(27px) rotate(45deg);
                         }
-    
+
                         &.line-3 {
                             transform: translateX(-27px) rotate(-45deg);
                         }
                     }
-    
+
                     &:hover {
-    
+
                         .menu-line {
                             background-color: $main-yellow;
-    
+
                             &.line-1 {
                                 transform: translateX(27px) rotate(180deg);
                             }
-    
+
                             &.line-3 {
                                 transform: translateX(-27px) rotate(-180deg);
                             }
                         }
-                    }
-
-                    &:hover{
-
                     }
                 }
 
@@ -880,6 +893,34 @@ footer {
 
                 .mr10 {
                     margin-right: 80px;
+                }
+
+                .p10 {
+                    padding: 10px;
+                }
+            }
+
+            @media all and (max-width: $media-sm) {
+                .modal-body {
+
+                    .modal-title {
+
+                        h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+
+            @media all and (max-width: $media-xs) {
+                .modal-body {
+
+                    .modal-title {
+
+                        h2 {
+                            font-size: 1.6rem;
+                        }
+                    }
                 }
             }
 

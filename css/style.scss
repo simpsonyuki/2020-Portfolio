@@ -184,7 +184,7 @@ header {
                 bottom: 6rem;
 
                 .eng-name {
-                    
+
 
                     &::after {
                         bottom: 6.5rem;
@@ -766,25 +766,42 @@ footer {
                 }
 
                 &:hover {
-                    .menu-line.line-1 {
-                        transform: translateY(0) rotate(0);
-                    }
 
-                    .menu-line.line-3 {
-                        transform: translateY(-16px) rotate(0);
+                    .menu-line {
+                        background-color: #cfcfcf;
+
+                        &.line-1 {
+                            transform: translateY(16px) rotate(180deg);
+                        }
+
+                        &.line-3 {
+                            transform: translateY(0) rotate(-180deg);
+                        }
                     }
                 }
+            }
 
-                .modal-body {
+            .modal-body {
+
+                .modal-title {
+                    margin-bottom: 80px;
 
                     h2 {
                         font-size: 3em;
                         color: $main-black;
-                        background: url(../img/bottom-line-y.svg) repeat-x center bottom;
-                        background-size: 1rem;
-                        width: 25rem;
                         text-align: center;
                         margin: 0 auto;
+
+                        &::before{
+                            content: '{';
+                            color: $main-yellow;
+                            padding-right: 12px;
+                        }
+                        &::after{
+                            content: '}';
+                            color: $main-yellow;
+                            padding-left: 12px;
+                        }
                     }
 
 
@@ -798,26 +815,74 @@ footer {
                         }
                     }
 
-                    .modal-flex {
-                        text-align: center;
+                }
 
-                        .row {
-                            justify-content: center;
 
+
+                .modal-flex {
+                    text-align: center;
+
+                    .row {
+                        justify-content: center;
+
+                    }
+                }
+
+                .modal-footer{
+                    border-top:0;
+                    justify-content: center;
+                    margin-top: 30px;
+                    cursor: pointer;
+
+                    .menu-line {
+                        display: block;
+                        width: 3rem;
+                        height: 4px;
+                        border-radius: 4px;
+                        background-color: #cfcfcf;
+                        margin-top: 12px;
+                        transition: all 0.3s ease-in-out;
+                        
+    
+                        &.line-1 {
+                            transform: translateX(27px) rotate(45deg);
+                        }
+    
+                        &.line-3 {
+                            transform: translateX(-27px) rotate(-45deg);
+                        }
+                    }
+    
+                    &:hover {
+    
+                        .menu-line {
+                            background-color: $main-yellow;
+    
+                            &.line-1 {
+                                transform: translateX(27px) rotate(180deg);
+                            }
+    
+                            &.line-3 {
+                                transform: translateX(-27px) rotate(-180deg);
+                            }
                         }
                     }
 
+                    &:hover{
 
-                    img,
-                    .mb30 {
-                        margin-bottom: 30px;
-                    }
-
-                    .mr10 {
-                        margin-right: 10px;
                     }
                 }
+
+                img,
+                .mb30 {
+                    margin-bottom: 30px;
+                }
+
+                .mr10 {
+                    margin-right: 80px;
+                }
             }
+
         }
     }
 }

@@ -744,7 +744,11 @@ footer {
           transform: translateX(-27px) rotate(-180deg);
 }
 
-.portfolio-modal .modal-dialog .modal-content .modal-body img,
+.portfolio-modal .modal-dialog .modal-content .modal-body img {
+  padding: 10px;
+  border: 1px solid #f5f5f5;
+}
+
 .portfolio-modal .modal-dialog .modal-content .modal-body .mb30 {
   margin-bottom: 30px;
 }

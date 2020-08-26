@@ -84,6 +84,16 @@ $media-xxs: 400px;
 
         }
     }
+
+    @media all and (max-width: $media-xxs) {
+        font-size: 3rem;
+
+        &::after {
+            width: 120px;
+            margin-top: 2rem;
+
+        }
+    }
 }
 
 @mixin year {
@@ -195,6 +205,36 @@ header {
                 }
             }
 
+            @media all and (max-width: $media-xxs) {
+                right: 0;
+                bottom: 0;
+                background: $main-yellow;
+                width: 100%;
+                text-align: center;
+
+                .cht-name {
+                    display: inline-block;
+                    font-size: 2.5rem;
+                }
+
+                .eng-name {
+                    display: inline-block;
+                    font-size: 2rem;
+                    margin-top: -1.5rem;
+
+                    &::after {
+                        width: 3rem;
+                        bottom: 5.2rem;
+                        margin-left: 10px;
+                    }
+                }
+
+                .job-title {
+                    font-size: 2rem;
+                    margin-top: -20px;
+                }
+            }
+
         }
 
         .banner-bg {
@@ -207,6 +247,10 @@ header {
                 background-size: contain;
                 background-position: top center;
                 background-repeat: no-repeat;
+            }
+
+            @media all and (max-width: $media-xxs) {
+                height: 50vh;
 
             }
         }
@@ -248,7 +292,7 @@ main {
 
 
     @media all and (max-width: $media-lg) {
-        margin-top: 0 ;
+        margin-top: 0;
     }
 
     @media all and (max-width: $media-md) {
@@ -256,11 +300,15 @@ main {
     }
 
     @media all and (max-width: $media-sm) {
-        margin-top: -200px;
+        margin-top: -300px;
     }
 
     @media all and (max-width: $media-xs) {
         margin-top: -350px;
+    }
+
+    @media all and (max-width: $media-xxs) {
+        margin-top: 0;
     }
 
     section {

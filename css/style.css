@@ -53,6 +53,10 @@ header .banner .banner-title {
 }
 
 @media all and (max-width: 992px) {
+  header .banner .banner-title {
+    right: 4rem;
+    bottom: 13rem;
+  }
   header .banner .banner-title .cht-name {
     font-size: 5rem;
   }
@@ -71,23 +75,34 @@ header .banner .banner-title {
 }
 
 @media all and (max-width: 768px) {
+  header .banner .banner-title {
+    right: 4rem;
+    bottom: 13rem;
+  }
+  header .banner .banner-title .cht-name {
+    font-size: 4rem;
+  }
+  header .banner .banner-title .eng-name {
+    font-size: 2.3rem;
+  }
   header .banner .banner-title .eng-name::after {
     height: 2px;
-    width: 7rem;
-    bottom: 6.5rem;
+    width: 5.5rem;
+    bottom: 5.8rem;
   }
   header .banner .banner-title .job-title {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     margin-top: -20px;
   }
 }
 
 @media all and (max-width: 576px) {
   header .banner .banner-title {
-    bottom: 6rem;
+    right: 3rem;
+    bottom: 20rem;
   }
   header .banner .banner-title .eng-name::after {
-    bottom: 6.5rem;
+    bottom: 5.2rem;
   }
 }
 
@@ -131,6 +146,34 @@ header .banner .eng-name::after {
 header .banner .job-title {
   font-size: 3rem;
   color: #202020;
+}
+
+main {
+  margin-top: auto;
+}
+
+@media all and (max-width: 1200px) {
+  main {
+    margin-top: 0;
+  }
+}
+
+@media all and (max-width: 992px) {
+  main {
+    margin-top: -100px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  main {
+    margin-top: -200px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  main {
+    margin-top: -350px;
+  }
 }
 
 main section {

@@ -134,6 +134,8 @@ header {
             bottom: 4rem;
 
             @media all and (max-width: $media-md) {
+                right: 4rem;
+                bottom: 13rem;
 
                 .cht-name {
                     font-size: 5rem;
@@ -157,32 +159,38 @@ header {
             }
 
             @media all and (max-width: $media-sm) {
+                right: 4rem;
+                bottom: 13rem;
+
                 .cht-name {
+                    font-size: 4rem;
                 }
 
                 .eng-name {
+                    font-size: 2.3rem;
 
                     &::after {
                         height: 2px;
-                        width: 7rem;
-                        bottom: 6.5rem;
+                        width: 5.5rem;
+                        bottom: 5.8rem;
                     }
                 }
 
                 .job-title {
-                    font-size: 2.3rem;
+                    font-size: 1.8rem;
                     margin-top: -20px;
                 }
             }
 
             @media all and (max-width: $media-xs) {
-                bottom: 6rem;
+                right: 3rem;
+                bottom: 20rem;
 
                 .eng-name {
 
 
                     &::after {
-                        bottom: 6.5rem;
+                        bottom: 5.2rem;
                     }
                 }
             }
@@ -236,12 +244,30 @@ header {
 
 
 main {
+    margin-top: auto;
+
+
+    @media all and (max-width: $media-lg) {
+        margin-top: 0 ;
+    }
+
+    @media all and (max-width: $media-md) {
+        margin-top: -100px;
+    }
+
+    @media all and (max-width: $media-sm) {
+        margin-top: -200px;
+    }
+
+    @media all and (max-width: $media-xs) {
+        margin-top: -350px;
+    }
+
     section {
         padding: 100px 0 200px 0;
 
         @media all and (max-width: $media-md) {
             padding: 100px 0 50px 0;
-            ;
         }
     }
 

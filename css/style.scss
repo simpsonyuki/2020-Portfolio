@@ -194,14 +194,24 @@ header {
 
             @media all and (max-width: $media-xs) {
                 right: 3rem;
-                bottom: 20rem;
+                bottom: 27rem;
+
+                .cht-name {
+                    font-size: 2.5rem;
+                }
 
                 .eng-name {
-
+                    font-size: 1.6rem;
 
                     &::after {
-                        bottom: 5.2rem;
+                        height: 2px;
+                        width: 3rem;
+                        bottom: 4.2rem;
                     }
+                }
+
+                .job-title {
+                    font-size: 1.2rem;
                 }
             }
 

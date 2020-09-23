@@ -99,10 +99,21 @@ header .banner .banner-title {
 @media all and (max-width: 576px) {
   header .banner .banner-title {
     right: 3rem;
-    bottom: 20rem;
+    bottom: 27rem;
+  }
+  header .banner .banner-title .cht-name {
+    font-size: 2.5rem;
+  }
+  header .banner .banner-title .eng-name {
+    font-size: 1.6rem;
   }
   header .banner .banner-title .eng-name::after {
-    bottom: 5.2rem;
+    height: 2px;
+    width: 3rem;
+    bottom: 4.2rem;
+  }
+  header .banner .banner-title .job-title {
+    font-size: 1.2rem;
   }
 }
 

@@ -133,154 +133,19 @@ $media-xxs: 400px;
 
 // header
 header {
-    position: relative;
 
     .banner {
-        position: relative;
+        background-color: $main-yellow ;
+        height: 100vh;
 
-        .banner-title {
-            position: absolute;
-            right: 6rem;
-            bottom: 4rem;
-
-            @media all and (max-width: $media-md) {
-                right: 4rem;
-                bottom: 13rem;
-
-                .cht-name {
-                    font-size: 5rem;
-                }
-
-                .eng-name {
-                    font-size: 3rem;
-
-                    &::after {
-                        height: 2px;
-                        width: 7rem;
-                        bottom: 6.5rem;
-                    }
-                }
-
-                .job-title {
-                    font-size: 2.3rem;
-                    margin-top: -20px;
-                }
-
-            }
-
-            @media all and (max-width: $media-sm) {
-                right: 4rem;
-                bottom: 13rem;
-
-                .cht-name {
-                    font-size: 4rem;
-                }
-
-                .eng-name {
-                    font-size: 2.3rem;
-
-                    &::after {
-                        height: 2px;
-                        width: 5.5rem;
-                        bottom: 5.8rem;
-                    }
-                }
-
-                .job-title {
-                    font-size: 1.8rem;
-                    margin-top: -20px;
-                }
-            }
-
-            @media all and (max-width: $media-xs) {
-                right: 3rem;
-                bottom: 20rem;
-
-                .eng-name {
-
-
-                    &::after {
-                        bottom: 5.2rem;
-                    }
-                }
-            }
-
-            @media all and (max-width: $media-xxs) {
-                right: 0;
-                bottom: 0;
-                background: $main-yellow;
-                width: 100%;
-                text-align: center;
-
-                .cht-name {
-                    display: inline-block;
-                    font-size: 2.5rem;
-                }
-
-                .eng-name {
-                    display: inline-block;
-                    font-size: 2rem;
-                    margin-top: -1.5rem;
-
-                    &::after {
-                        width: 3rem;
-                        bottom: 5.2rem;
-                        margin-left: 10px;
-                    }
-                }
-
-                .job-title {
-                    font-size: 2rem;
-                    margin-top: -20px;
-                }
-            }
-
-        }
-
-        .banner-bg {
-            background-image: url(../img/banner.png);
-            background-size: cover;
-            height: 100vh;
+        .banner-bg{
+            position: relative;
+            z-index: 99;
+            background-image: url(/img/banner-font.png);
+            background-size: contain;
             background-position: center;
-
-            @media all and (max-width: $media-md) {
-                background-size: contain;
-                background-position: top center;
-                background-repeat: no-repeat;
-            }
-
-            @media all and (max-width: $media-xxs) {
-                height: 50vh;
-
-            }
-        }
-
-        .cht-name {
-            font-size: 6rem;
-            color: #fff;
-
-        }
-
-        .eng-name {
-            font-size: 4rem;
-            color: #fff;
-            margin-top: -2rem;
-
-            &::after {
-                content: '';
-                display: inline-block;
-                background-color: #fff;
-                height: 3px;
-                width: 9.5rem;
-                position: absolute;
-                bottom: 9.5rem;
-                margin-left: 15px;
-            }
-        }
-
-        .job-title {
-            font-size: 3rem;
-            color: $main-black;
+            background-repeat: no-repeat;
+            height: 100vh;
         }
     }
 
@@ -288,28 +153,7 @@ header {
 
 
 main {
-    margin-top: auto;
-
-
-    @media all and (max-width: $media-lg) {
-        margin-top: 0;
-    }
-
-    @media all and (max-width: $media-md) {
-        margin-top: -100px;
-    }
-
-    @media all and (max-width: $media-sm) {
-        margin-top: -300px;
-    }
-
-    @media all and (max-width: $media-xs) {
-        margin-top: -350px;
-    }
-
-    @media all and (max-width: $media-xxs) {
-        margin-top: 0;
-    }
+   
 
     section {
         padding: 100px 0 200px 0;
